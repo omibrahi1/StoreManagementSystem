@@ -1,0 +1,15 @@
+all: ItemType.java Item.java Main.java Collection.java
+	javac ItemType.java
+	javac Item.java
+	javac Main.java
+	javac Collection.java
+
+jar: all
+	java Main
+
+
+run: all
+	java Main
+
+clean: 
+	rm -f *.class
